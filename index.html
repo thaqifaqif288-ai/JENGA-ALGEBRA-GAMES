@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JENGA ALAGEBRA GAMES</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="game-container">
+    <h1>🧮 JENGA ALAGEBRA GAMES</h1>
+
+    <p class="instruction">
+      Tekan <b>Play</b>, pilih jawapan betul, kemudian tekan <b>Enter</b> atau butang <b>Done</b>.
+    </p>
+
+    <button onclick="startQuiz()">▶ Play</button>
+
+    <div id="question-container" class="hidden">
+      <p id="question"></p>
+
+      <input type="number" id="answer" placeholder="Masukkan jawapan" onkeypress="handleEnter(event)">
+      <button onclick="checkAnswer()">Done</button>
+
+      <p id="result"></p>
+      <p id="score">Skor: 0</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
